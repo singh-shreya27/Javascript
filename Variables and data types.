@@ -1,4 +1,14 @@
+// console.log("Hello js.");
+// console.log("Hello shreya");
+// console.log("I want to learn javascript.");
+// fullName="Tony Stark";
+// console.log(fullName);
+// x=undefined;
+// console.log(x);
+
+
 //Variable Rules
+
 //Variable names are case sensitive; "a" and "A" is different.
 //Only letters, digits, underscore(_) and $ is allowed.(not even space)
 //Only a letter, underscore(_) or $ should be 1st character.
