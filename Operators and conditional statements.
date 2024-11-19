@@ -3,4 +3,8 @@
 //This is a single line comment.
 /* This is a multi-line 
    comment. */
+//Operators in JS.
+//used to perform some operation on data.
+//Arithmetic Operators: +,-,*,/
+
 
