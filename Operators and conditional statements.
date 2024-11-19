@@ -5,6 +5,61 @@
    comment. */
 //Operators in JS.
 //used to perform some operation on data.
+
 //Arithmetic Operators: +,-,*,/
+
+let a=5;
+let b=2;
+console.log("a=",a,"and b=",b);
+console.log("a+b=", a+b);
+console.log("a-b=", a-b);
+console.log("a*b=", a*b);
+console.log("a/b=", a/b);
+console.log("a%b=", a%b);  //%=remainder
+console.log("a**b=", a**b);  //**=exponent 
+
+//unary operators.
+let a=5;
+let b=2;
+console.log("a=",a,"and b=",b);
+//increment(++), decrement(--)
+a++;//a=a+1
+a--;//a=a-1
+console.log("a=",a);
+
+console.log("++a=",++a); 
+console.log("a++=",a++);
+console.log("a=",a);
+
+//Assignment operators.
+//== , += , -=, *=, %=, **= 
+let a=5;
+let b=2;
+a += 4;   //a=a+4
+console.log(a);
+
+//Comparison operators
+//equal to ==
+//equal to &type ===
+//not equal to !=
+not equal to &type !==
+>,>=,<,<=
+
+let a=5;
+let b=2;
+console.log("5==2", a==b);  //false
+console.log("5!=2", a!=b);  //true
+let a=5;  //number
+let b="5"; //string  
+console.log("a == b", a==b); //true
+ //javascript converts string->number then compares with number
+
+// console.log("a === b", a===b); //false
+(=== compares data type also)
+
+//Logical operators    // false or true
+//Logical and &&
+//Logical or ||
+//Logical not !
 
 
