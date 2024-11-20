@@ -62,4 +62,38 @@ console.log("a == b", a==b); //true
 //Logical or ||
 //Logical not !
 
+//conditional Statements 
+
+let age=25;
+if(age>=18){
+    console.log("vote");
+}else{
+     console.log("not vote"); 
+}
+
+let mode="silver";
+let color;
+
+if(mode === "dark"){
+    color ="black";
+}else if(mode === "blue"){
+    color ="blue";
+}else if(mode === "pink"){
+    color="pink";
+}else{
+    color="white";
+}
+console.log(color);
+
+//OPERATORS IN JS
+//Ternary Operators
+//condition?true output : false output
+
+let result =age >= 18 ? "adult" : "no adult";
+age>=18 ? console.log("adult") : console.log("not adult");
+
+//Switch statement.
+
+
+
 
