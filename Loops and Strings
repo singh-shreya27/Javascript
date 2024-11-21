@@ -1,1 +1,5 @@
+//LOOPS IN JS
+//Loops are used to execute a piece of code again and again.
 
+//Infinite loop=loop that never ends. (although we should never do it in a program).
+//stopping condition->true.
