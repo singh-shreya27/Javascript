@@ -1,5 +1,41 @@
 //LOOPS IN JS
 //Loops are used to execute a piece of code again and again.
 
+//For loop:
+for(let i=1;i<=5;i++){
+    console.log("apna college");
+}
+
+for(let count=1;count<=5;count++){
+    console.log("Apna college");  
+}
+console.log("Loop has ended.")
+//calculate sum of 1 to n
+let sum=0;
+for(let i=1;i<=9;i++){
+   sum=sum+i;
+}
+console.log(sum);
+console.log("loop has ended.");
+
 //Infinite loop=loop that never ends. (although we should never do it in a program).
 //stopping condition->true.
+
+//WHILE LOOP.
+let i=1;
+while(i<=5){
+    console.log("i=",i);
+    i++;
+}
+//does not end with;
+
+//DO WHILE LOOP.
+let i=20;
+do{
+    console.log("Apna college");
+}while(i<=10);
+//ends with;(REMEMBER)
+
+//FOR-OF LOOP
+//It helps us to use loops in strings and arrays.
+
