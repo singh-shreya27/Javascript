@@ -1,1 +1,16 @@
+Arrays in JS:
+Collection of items.
+let marks=[97,82,77,65,32];
+console.log(marks);
+console.log(marks.length);
+typeof(marks)   //object
+//so arrays are a object datatype.
+//stringa are immutable in javascript.
+//arrays are mutable in javascript.
 
+//Looping over an array
+//Print all elements of an array.
+let heroes=["ironman","spiderman","hulk","loki","wanda","vision"];
+for(let i=0;i<heroes.length;i++){
+    console.log(heroes[i]);
+}
