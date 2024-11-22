@@ -39,3 +39,18 @@ do{
 //FOR-OF LOOP
 //It helps us to use loops in strings and arrays.
 
+for(let var of strVar){
+ //do some work 
+}
+
+//for-of loop
+let str = "ApnaCollege";
+let size=0;
+for(let i of str){
+    //i=iterator->characters
+    console.log("i:",i);
+    size++;
+}
+//we don't need to set initialization,updation or even ending condition in for-of loop.
+console.log("string size=",size);  
+//we don't use for-of loop for objects.
