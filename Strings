@@ -1,1 +1,31 @@
+  //STRINGS IN JS
+  //String is a sequence of characters used to represent text.
+  //create string
+  let str="Apna college";
+  //string length
+  str.length
+  //string indices
+  str[0],str[1],str[2]
 
+//Template Literals 
+//A way to have embedded expressions in strings
+//(created using backticks)
+let specialString=`This is a template literal.`;
+console.log(specialString);
+console.log(typeof(specialString));   //string
+
+//why template literals?
+let obj={
+    item:"pen",
+    price:10,
+}
+console.log("The cost of",obj.item,"is",obj.price,"rupees");
+
+//to combine this in a single string , we use template literal.
+
+let output=`The cost of ${obj.item} is ${obj.price} rupees`;
+console.log(output);
+
+//String interpolation
+//To create strings by doing substitution of placeholders.
+`string text ${expression} string text`
