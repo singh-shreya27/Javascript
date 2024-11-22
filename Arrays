@@ -14,3 +14,22 @@ let heroes=["ironman","spiderman","hulk","loki","wanda","vision"];
 for(let i=0;i<heroes.length;i++){
     console.log(heroes[i]);
 }
+
+//for-of loop
+for(let hero of heroes){
+    console.log(hero);
+}
+
+//Q.1.For a given array with marks of students->[85,97,44,37,76,60]
+//Find the average marks of the entire class.
+let marks=[85,97,44,37,76,60];
+let sum=0;
+for(let i=0;i<marks.length;i++){
+    sum=sum+marks[i];
+}
+console.log(sum);
+
+//Q.2.For a given array with prices of 5 items->[250,645,300,900,50]
+//All items have an offer of 10% OFF on them.Change the array to store final price after applying offer.
+let avg=sum/marks.length;
+console.log(avg);
