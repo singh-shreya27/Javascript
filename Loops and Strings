@@ -54,3 +54,33 @@ for(let i of str){
 //we don't need to set initialization,updation or even ending condition in for-of loop.
 console.log("string size=",size);  
 //we don't use for-of loop for objects.
+
+//for-in loop
+//for in loop ->returns keys of an object
+ let student={
+    name:"Shreya singh",
+    age:20,
+    cgpa:8.11,
+    isPass:true,
+
+ };
+ for(let key in student){
+    console.log("key:",key,"value:",student[key]);
+ }
+
+//QUES.1:Print all the numbers from 0 to 100.
+console.log("numbers:");
+for(let i=0;i<=100;i++){
+    console.log(i);
+}
+
+//QUES.2:Print all the even numbers from 0 to 100.
+console.log("even numbers:");
+for(let num=0;num<=100;num++){
+    if(num%2===0){
+        console.log(num);
+    }
+}
+
+
+
