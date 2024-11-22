@@ -82,5 +82,17 @@ for(let num=0;num<=100;num++){
     }
 }
 
+//QUES.3:Create a game where you start with any random game number.Ask the user to keep guessing the game number until the user enters correct value.
+let gameNum=27;
+let userNum=prompt("Guess the game number:");
+console.log(userNum);
+while(userNum !=gameNum){
+    //(!==) cann't use this because prompt return string
+    //game
+   userNum= prompt("You entered wrong number,guess again.")
+}
+
+    console.log("Congratulations,You won.");
+
 
 
