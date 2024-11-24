@@ -28,8 +28,30 @@ for(let i=0;i<marks.length;i++){
     sum=sum+marks[i];
 }
 console.log(sum);
+let avg=sum/marks.length;
+console.log(avg);
 
 //Q.2.For a given array with prices of 5 items->[250,645,300,900,50]
 //All items have an offer of 10% OFF on them.Change the array to store final price after applying offer.
-let avg=sum/marks.length;
-console.log(avg);
+
+//using FOR-OF LOOP.
+let items=[250,645,300,900,50];
+let i=0;
+for(let val of items){
+    console.log(`value at index ${i}=${val}` ) ;
+    let offer= val/10;
+    items[i]=items[i]-offer;
+    console.log(`value after offer=${items[i]}`);
+    i++;
+}
+
+//using FOR-LOOP.
+let price=[250,645,300,900,50];
+for(let i=0;i<price.length;i++){
+   let offer=price[i]*0.1;
+    price[i]=price[i]-offer;
+    console.log("value after offer:",price[i]);
+}
+
+
+
