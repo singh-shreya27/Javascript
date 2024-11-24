@@ -53,5 +53,23 @@ for(let i=0;i<price.length;i++){
     console.log("value after offer:",price[i]);
 }
 
+//ARRAY METHODS:
+//1.push(): add to end.
+let veggies=["tomato","potato","carrot","chilli"];
+console.log(veggies);
+console.log(veggies.push("lemon"));
+console.log(veggies);
+
+//2.pop(): delete from end and return .
+let veggies=["tomato","potato","carrot","chilli"];
+console.log(veggies);
+console.log("deleted item:",veggies.pop());
+console.log(veggies);
+
+//3. toString(): converts arrau to string.
+let veggies=["tomato","potato","carrot","chilli"];
+console.log(veggies);
+console.log(veggies.toString());
+
 
 
