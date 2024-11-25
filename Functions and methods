@@ -1,1 +1,53 @@
+//Functions in JS :
+//Block of code that performs a specific task, can be invoked whenever needed.
+
+//1.//Function definition:
+function functionName(param1,param2){
+//do some work 
+   }
+//2.//Function call:
+functionName();
+
+function myFunc(){
+    console.log("Welcome to Apna college.");
+    console.log("We are learning JS.");
+}
+myFunc();
+
+ function myFunc(msg){
+    //parameter ->input
+    console.log(msg);
+}
+myFunc("I am stupid."); //argument
+
+function myFunc(msg,n){
+    //parameter ->input
+    console.log(msg*n);
+}
+myFunc("I am stupid.",100); //argument
+//output=NaN (not a number)
+
+//Function->2 numbers,sum
+function sum(a,b){
+   console.log (a+b);
+}
+sum(2,3);
+
+//#
+function sum(x,y){
+//local variables
+    s=x+y;
+console.log("Before return:");
+    return s;
+}
+sum(1,5);
+//nothing will be printed
+//so we have to store this returned value.
+let val=sum(1,5);
+console.log(val);
+
+//FUNCTION PARAMETERS ARE LIKE LOCAL VARIABLES OF FUNCTION AND THEY ARE BLOCK SCOPED.
+
+//#
+//Arrow functions:Compact way of writing a function.
 
