@@ -71,5 +71,46 @@ let veggies=["tomato","potato","carrot","chilli"];
 console.log(veggies);
 console.log(veggies.toString());
 
+//4.Concat():joins multiple arrays and returns result.
+let marvelHeroes=["thor","spiderman","loki","vision"];
+let dcHeroes=["superman","batman"];
+let indianHeroes=["shaktiman","krish"];
+let heroes=marvelHeroes.concat(dcHeroes,indianHeroes);
+console.log(heroes);
 
+//5.unshift():add to start
+let marvelHeroes=["thor","spiderman","loki","vision"];
+marvelHeroes.unshift("antman");
+console.log(marvelHeroes);
+
+//6.shift():delete from start and return
+let marvelHeroes=["thor","spiderman","loki","vision"];
+let val=marvelHeroes.shift();
+console.log("Deleted hero:",val);
+console.log(marvelHeroes);
+
+//7.slice(): returns a piece of the array  ->does not change original array.
+//slice(startIdx, endIdx)->ending index is non-inclusive
+let marvelHeroes=["thor","spiderman","loki","vision","antman"];
+console.log(marvelHeroes);
+console.log(marvelHeroes.slice(2,4));
+
+//8.splice(): change original array(add,remove,replace)
+//splice(startIdx,delCount,newElement)
+let arr=[1,2,3,4,5,6,7];
+arr.splice(2,2,101,102);
+
+let arr=[1,2,3,4,5,6,7];
+//add element
+arr.splice(2,0,101);
+
+let arr=[1,2,3,4,5,6,7];
+//delete element
+arr.splice(2,1);
+
+let arr=[1,2,3,4,5,6,7];
+//replace element
+arr.splice(3,1,89);
+
+//if we only use arr.splice(4); it means delete all elements after index 4.
 
