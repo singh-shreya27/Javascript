@@ -72,3 +72,5 @@ let arrowMul=(a,b)=>{
     console.log(a*b);
 };
 console.log(arrowMul(3,2));
+
+//Create a function using the "function" keyword that takes a string as an argument and returns the number of vowels in the string.
