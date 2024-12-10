@@ -5,6 +5,4 @@ JAVASCRIPT<br>
 4.Loops<br>
 5.Functions and methods.<br>
 6.Arrays.<br>
-DUE TO EXAMS...I am putting you on hold.<br>
-Will come back very soon.<br>
-Back again(06-12-2024) ...Done with end sems...
+
