@@ -1,33 +1,34 @@
 //Functions in JS :
-//Block of code that performs a specific task, can be invoked whenever needed.
+//Block of code that performs a specific task, can be invoked(called) whenever needed.
 
 //1.//Function definition:
-function functionName(param1,param2){
-//do some work 
+function functionName(param1,param2...){
+          //do some work 
    }
 //2.//Function call:
 functionName();
 
+//example:
 function myFunc(){
     console.log("Welcome to Apna college.");
     console.log("We are learning JS.");
 }
-myFunc();
+myFunc();   //function call
 
  function myFunc(msg){
-    //parameter ->input
+    //(msg):parameter ->input //function definition ke andar jo variable hota h usko parameter kehte h.
     console.log(msg);
 }
-myFunc("I am stupid."); //argument
+myFunc("I am stupid."); //argument  //function call ke andar jo variable hota h usko argument kehte h.
 
 function myFunc(msg,n){
-    //parameter ->input
+    //parameter-> multiple inputs
     console.log(msg*n);
 }
 myFunc("I am stupid.",100); //argument
-//output=NaN (not a number)
+//output=NaN (not a number)  number cannot be multiplied to a string.
 
-//Function->2 numbers,sum
+//Function which calculates the sum of 2 numbers.
 function sum(a,b){
    console.log (a+b);
 }
@@ -39,6 +40,7 @@ function sum(x,y){
     s=x+y;
 console.log("Before return:");
     return s;
+//any code written after return will not be executed.
 }
 sum(1,5);
 //nothing will be printed
@@ -48,11 +50,10 @@ console.log(val);
 
 //FUNCTION PARAMETERS ARE LIKE LOCAL VARIABLES OF FUNCTION AND THEY ARE BLOCK SCOPED.
 
-//#
 //Arrow functions:Compact way of writing a function.
-const functionName =(param1,param2)=>{
-//do some work
-}
+                    const functionName =(param1,param2 ...)=>{
+                                  //do some work
+                           }
 
 //sum function
 function sum(a,b){
@@ -64,6 +65,7 @@ const arrowSum=(a,b)=>{
     console.log(a+b);
 };
 console.log(arrowSum(3,4));
+
 //multiplication function
 function mul(a,b){
     return a*b;
@@ -72,5 +74,7 @@ let arrowMul=(a,b)=>{
     console.log(a*b);
 };
 console.log(arrowMul(3,2));
+
+//Generally, arrow functions are used for small work.
 
 //Create a function using the "function" keyword that takes a string as an argument and returns the number of vowels in the string.
