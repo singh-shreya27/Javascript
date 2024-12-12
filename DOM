@@ -11,3 +11,27 @@
 
 //What is DOM?
 //When a web page is loaded, the browser creates a Document Object Model(DOM) of the page.
+
+                       window
+                          |
+                       document
+                            |
+                           html
+                        /        \
+                     head            body
+                   / / | \            /   \
+            meta meta title link     div    script
+                                   / / | \
+                                 img h1 p div
+
+//DOM is usd to make dynamic changes/manipulation.
+//DOM Manipulation:
+//selecting with id:
+document.getElementById("myId")
+//selecting with class
+document.getElementsByClassName("myClass")
+//selecting with tag
+document.getElementsByTagName("p")
+
+let heading = document.getElementById("heading");
+console.dir(heading);
