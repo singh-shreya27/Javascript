@@ -78,3 +78,59 @@ console.log(arrowMul(3,2));
 //Generally, arrow functions are used for small work.
 
 //Create a function using the "function" keyword that takes a string as an argument and returns the number of vowels in the string.
+
+function vowelCount(str){
+   
+    //print every character.
+    for(const char of str){
+        console.log(char);
+    }
+
+     let count=0;
+    for(const char of str){
+        if(char==="a" || char==="e" || char==="i" || char=="o" || char=="u"){
+           count++;
+        }
+    }
+console.log(count);
+}
+vowelCount('yyy');
+
+//create an arrow function to perform the same task.
+const arrowcountVowel=(str)=>{
+    let count=0;
+        for(const char of str){
+            if(char==="a" || char==="e" || char==="i" || char==="o" || char==="u"){
+               count++;
+            }
+}
+     console.log(count);
+}
+
+console.log(arrowcountVowel('ahhy'));
+
+                     //HIGHER ORDER FUNCTIONS/METHODS.
+                //forEach loop in arrays
+//arr.forEach(callBackFunction)
+CallbackFunction: Here, it is a function to execute for each element in the array.
+*A callback is a function passed as an argument to another function.
+
+//for each cannot be used for strings.
+arr.forEach((val)=> {
+          console.log(val);
+           })
+
+//example:
+let arr=[1,2,3,4,5]
+
+arr.forEach(function printVal(val){
+console.log(val);
+});
+
+//callback function is generally passed as an arrow function
+let arr=[1,2,3,4,5];
+arr.forEach((val,idx,arr)=>{
+    console.log(val,idx,arr);
+});
+
+//HIGHER ORDER FUNCTIONS/METHODS: are the functions which takes other functions as a parameter or they return another function.
