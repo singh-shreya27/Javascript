@@ -127,10 +127,67 @@ arr.forEach(function printVal(val){
 console.log(val);
 });
 
-//callback function is generally passed as an arrow function
+//callback function is generally passed as an arrow function.
 let arr=[1,2,3,4,5];
 arr.forEach((val,idx,arr)=>{
     console.log(val,idx,arr);
 });
 
-//HIGHER ORDER FUNCTIONS/METHODS: are the functions which takes other functions as a parameter or they return another function.
+//HIGHER ORDER FUNCTIONS/METHODS: are the functions which takes other functions as a parameter inside them or they return another function as output.
+//wherever we see callback function , that becomes a higher order function.
+
+//QUESTION:
+//For a given array of numbers, print the square of each value using the forEach loop.
+let arr=[1,2,3,4,5];
+arr.forEach((val)=>{
+    console.log(val*val);
+});
+
+//SOME MORE ARRAY METHODS.
+                           //MAP:
+//CREATES a new array with the results of some operation.The value its callback returns are used to form new array.
+arr.map(callbackFnx(value,index,array))
+
+let newArr=arr.map((val)=>{
+   return val*2;
+   })
+
+let nums=[67,52,39];
+nums.map((val)=>{
+    console.log(val);
+});
+                  //FILTER:
+//Creates a new array of elements that give true for a condition/filter.
+//Eg:all even elements.
+
+let newArr=arr.filter((val)=>{
+      return val%2===0;
+});
+                    //REDUCE:
+//Performs some operations and reduces the array to a single value.It returns that single value.
+let arr=[1,2,3,4];
+const output=arr.reduce((res,curr)=>{
+    return res+curr;
+});
+console.log(output);
+
+//find maximum element from the array.
+let arr=[5,6,2,1,3];
+const output=arr.reduce((prev,curr)=>{
+    return prev>curr? prev:curr;
+});
+console.log(output);
+
+//Question:
+//We are given array of marks of students.Filter out of the marks of students that scored 90. 
+let marks=[45,89,67,91,95,36,1];
+let newArr=marks.filter((val)=>{
+    return val>90;
+});
+console.log(newArr);
+
+//Question:
+//Take a number n as input from user.Create an array of numbers from 1 to n.
+//Use the reduce method to calculate sum of all numbers in the array.
+//Use the reduce method to calculate product of all numbers in the array.
+
