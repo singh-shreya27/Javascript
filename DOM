@@ -1,1 +1,13 @@
+                                    //DOCUMENT OBJECT MODEL.
 
+//Starter Code
+//<style> tag connects HTML with CSS.
+//<script> tag connects HTML with JS.
+
+//Window Object
+//The window object represents an open window in a browser.It is browers's object(not JavaScipt's) and 
+//is automatically created by browser.
+//It is a global object with lots of properties and methods.
+
+//What is DOM?
+//When a web page is loaded, the browser creates a Document Object Model(DOM) of the page.
