@@ -3,6 +3,7 @@ JAVASCRIPT<br>
 2.Operators and conditional statements.<br>
 3.Strings<br>
 4.Loops<br>
-5.Functions and methods.<br>
-6.Arrays.<br>
+5.Arrays.<br>
+6.Functions and methods.<br>
+7.DOM.<br>
 
