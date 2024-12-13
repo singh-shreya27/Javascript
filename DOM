@@ -28,8 +28,10 @@
 //DOM Manipulation:
 //selecting with id:
 document.getElementById("myId")
+//when the element having that id does not exist, we get null.
 //selecting with class
 document.getElementsByClassName("myClass")
+//when the element having that class doesnot exist we get empty html collection.
 //selecting with tag
 document.getElementsByTagName("p")
 
