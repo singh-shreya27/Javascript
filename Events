@@ -2,9 +2,74 @@
 // The change in the state of an object is known as an Event.
 //Events are fired to notify code of "interesting changes" that may affect code execution.
 
+     //Inline event handling.
 //1.Mouse events(click,double click etc..)
 //2.Keyboard events(keypress, keyup, keydown)
 //3.Form events(submit etc..)
 //4.Print event & many more.
 
+                           //in html:
+<button onclick="console.log('button was clicked'); alert('hello!')">Click me!</button>
+<button ondblclick="console.log('button was clicked 2 times');">Click me 2 times!</button>
+<div onmouseover="console.log('you are inside div.')">
+     This is a box.
+</div>
 
+                                   //Event handling in JS.
+node.event=()=>{
+    //handle here
+}
+
+                            //in JS:
+//access btn1
+let btn1=document.querySelector("#btn1");
+btn1.onclick = () => {
+    console.log("btn1 was clicked.");
+   let a=25;
+   a++;
+   console.log(a);  //26
+}
+
+let div=document.querySelector("div");
+div.onmouseover=()=>{
+   console.log("you are inside div");
+}
+
+//Priority: JS handling > Inline handling
+//If we write multiple handlers in JS then the last handler will override others i.e. last one will be implemented.
+
+                                    //Event Object
+//It is a special object that has details about the event.
+//All event handlers have access to the Event Object's properties and methods.
+
+node.event=(e) =>{
+  //handle here 
+    }
+
+//e.target, e.type , e.clientX , e.clientY
+
+let btn1=document.querySelector("#btn1");
+
+btn1.onclick = (evt) => {
+   console.log(evt);
+   console.log(evt.type);
+   console.log(evt.target);
+   console.log(evt.clientX,evt.clientY);
+    
+}
+
+let div=document.querySelector("div");
+div.onmouseover=(evt)=>{
+   console.log(evt);
+   console.log(evt.type);
+   console.log(evt.target);
+   console.log(evt.clientX,evt.clientY);
+    
+}
+
+                             //Event Listeners
+node.addEventListener(event,callback)     //callback will be a function (handler)
+node.removeEventListener(event,callBack)
+//*Note : the callback reference should be same to remove
+
+ 
