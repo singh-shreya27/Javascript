@@ -70,6 +70,7 @@ div.onmouseover=(evt)=>{
                              //Event Listeners
 node.addEventListener(event,callback)     //callback will be a function (handler)
 node.removeEventListener(event,callBack)
-//*Note : the callback reference should be same to remove
+//*Note : the callback reference should be same to remove.
+
 
  
