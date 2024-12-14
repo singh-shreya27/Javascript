@@ -72,5 +72,72 @@ node.addEventListener(event,callback)     //callback will be a function (handler
 node.removeEventListener(event,callBack)
 //*Note : the callback reference should be same to remove.
 
+btn1.addEventListener("click",(evt) =>{
+   console.log("button was clicked.-handler 1");
+  
+})
+btn1.addEventListener("click",() =>{
+   console.log("button was clicked.-handler 2");
+})
+//to remove handler3
+const handler3=()=>{
+   console.log("button was clicked.-handler 3");
+}
+btn1.addEventListener("click",handler3);
 
- 
+btn1.addEventListener("click",() =>{
+   console.log("button was clicked.-handler 4");
+})
+
+btn1.removeEventListener("click",handler3)
+
+                                        //IMPORTANT.
+ //Question-Create a toggle button that changes the screen to dark mode when clicked & light-mode when clicked again.
+
+let modeButton= document.querySelector("#mode");
+let currMode= "light"; //dark
+modeButton.addEventListener("click",()=>{
+    if(currMode==="light"){
+      currMode="dark";
+      document.querySelector("body").style.backgroundColor="black";
+    }else{
+      currMode="light";
+      document.querySelector("body").style.backgroundColor="white";
+
+    }
+
+    console.log(currMode);
+});
+ //using classList
+//in css:
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+
+//in JS:
+let modeButton= document.querySelector("#mode");
+let body=document.querySelector("body");
+let currMode= "light"; //dark
+modeButton.addEventListener("click",()=>{
+    if(currMode==="light"){
+      currMode="dark";
+      body.classList.add("dark");
+      body.classList.remove("light");
+    }else{
+      currMode="light";
+      body.classList.add("light");
+      body.classList.remove("dark");
+
+
+    }
+
+    console.log(currMode);
+});
+
+
+
