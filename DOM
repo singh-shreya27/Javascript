@@ -73,3 +73,32 @@ console.dir(allEle);
 2.innerText: returns the text content of the element and all its children
 3.innerHTML: returns the plain text or HTML contents in the element
 4.textContent: returns textual content even for hidden elements
+
+//when we create DOM tree :
+//we have 3 types of nodes:
+//1.Text nodes
+//2.Comment nodes
+//3.Element nodes (we work on this)
+
+//Question 1:Create a H2 heading element with text-"Hello Javascript".Append "from Apna College Students" to this text using JS.
+
+//access the element
+let h2=document.querySelector("h2");
+console.dir(h2.innerText);
+//property->change
+h2.innerText = h2.innerText + " from Apna college students"; //concatenate
+
+//Question 2:Create 3 divs with common class name-"box".Access them & add some unique text to each of them.
+let divs=document.querySelectorAll(".box");
+// console.dir(divs[0]);
+// divs[0].innerText="new unique value 1";
+// divs[1].innerText="new unique value 2";
+// divs[2].innerText="new unique value 3";
+       
+//using for of loop
+let idx=1;
+for(div of divs ){
+   div.innerText=`new unique value ${idx}`;
+   idx++;
+   // console.log(div.innerText);
+}
