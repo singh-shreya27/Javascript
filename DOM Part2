@@ -1,1 +1,16 @@
+               //DOM Manipulation
+//Attributes
+1. getAttribute(attr)  //to get the attribute value
+2. setAttribute(attr,value) //to set the attribute value 
 
+//Style
+1. node.style
+
+//Insert Elements :    let el=document.createElement("div")
+//1.node.append(el)  //adds at the end of node(inside)
+//2.node.prepend(el) //adds at the start of node(inside)
+//3.node.before(el)  //adds before the node(outside)
+//4.node.after(el)   //adds after the node(outside)
+
+//Delete element
+//1.node.remote()    //removes the code.
