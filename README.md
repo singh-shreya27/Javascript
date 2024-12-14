@@ -5,5 +5,7 @@ JAVASCRIPT<br>
 4.Loops<br>
 5.Arrays.<br>
 6.Functions and methods.<br>
-7.DOM.<br>
+7.DOM(Part 1)<br>
+8.DOM(Part 2)<br>
+
 
