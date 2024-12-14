@@ -25,7 +25,7 @@
                                  img h1 p div
 
 //DOM is usd to make dynamic changes/manipulation.
-//DOM Manipulation:
+                   //DOM Manipulation:
 //selecting with id:
 document.getElementById("myId")
 //when the element having that id does not exist, we get null.
@@ -37,3 +37,39 @@ document.getElementsByTagName("p")
 
 let heading = document.getElementById("heading");
 console.dir(heading);
+
+// #:id  , id is unique
+// .:class
+
+let headingclass=document.getElementsByClassName("heading");
+console.dir(headingclass);
+
+let parahs=document.getElementsByTagName("p");
+console.dir(parahs);
+
+                  //Query Selector(A better way to access our elements)
+document.querySelector("myId / myClass / tag")
+//returns first element
+
+document.querySelectorAll("myId / myClass / tag")
+//returns a NodeList
+
+let firstEle= document.querySelector("p");   //first element
+console.dir(firstEle);                 
+
+let allEle=document.querySelectorAll("p");   //all elements
+console.dir(allEle);
+
+//write class name with a .(dot)
+//write id name with a #.
+let firstEle= document.querySelector(".heading");   //first element
+console.dir(firstEle);                 
+
+let allEle=document.querySelectorAll(".heading");   //all elements
+console.dir(allEle);
+
+                   //Properties
+1.tagName : returns tag for element nodes
+2.innerText: returns the text content of the element and all its children
+3.innerHTML: returns the plain text or HTML contents in the element
+4.textContent: returns textual content even for hidden elements
