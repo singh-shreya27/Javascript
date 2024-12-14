@@ -14,3 +14,7 @@
 
 //Delete element
 //1.node.remote()    //removes the code.
+
+//Question: 
+//Create a button element. Give it a text"click me", background color of red and text color of white.
+//Insert the button as the first element inside the body tag.
