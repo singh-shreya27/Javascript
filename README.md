@@ -8,4 +8,5 @@ JAVASCRIPT<br>
 7.DOM(Part 1)<br>
 8.DOM(Part 2)<br>
 9.Events<br>
-10.Tic-Tac-Toe Game
+10.Tic-Tac-Toe Game<br>
+11.Stone,paper, scissors Game.
