@@ -1,1 +1,82 @@
+              //OOPS:OBJECT ORIENTED PROGRAMMING IN JAVASCRIPT.
+//CLASSES AND OBJECTS.
 
+//Prototypes in JS:
+//A javascript object is an entity having state and behaviour(properties and method)
+//JS Objects have a special property called prototype.
+//We can set protoptype using __proto__
+//*If objects and prototype have same method, object's method will be used.
+
+const student = {
+    fullName:"Shreya singh",
+    marks:96.2,
+    printMarks: function(){
+      console.log("marks:",this.marks);   //student.marks
+    } 
+     };
+
+//in JS , array is an object.(typeof arr :object)
+
+const employee ={
+   calcTax1(){
+      console.log("Tax rate is 10%.");
+   },
+   calcTax2 : function(){
+      console.log("Tax rate is 10%.");
+
+   }
+   //both are correct ways .
+};
+
+const employee ={
+   calcTax(){
+      console.log("Tax rate is 10%.");
+   },
+   // calcTax2 : function(){
+   //    console.log("Tax rate is 10%.");
+
+   // }
+   //both are correct ways .
+};
+
+const karanArjun = {
+    salary: 50000,
+}
+
+//if we want to use the methods/properties of employee function in the karanArjun function then
+//we can write employee as a prototype in karanArjun
+
+karanArjun.__proto__ = employee;
+
+ //If we have more than 1 employee , then we will not have to write the same function for all employees.
+const employee ={
+   calcTax(){
+      console.log("Tax rate is 10%.");
+   },
+   // calcTax2 : function(){
+   //    console.log("Tax rate is 10%.");
+
+   // }
+   //both are correct ways .
+};
+
+const karanArjun = {
+    salary: 50000,
+}
+const karanArjun2 = {
+    salary: 50000,
+}
+const karanArjun3= {
+    salary: 50000,
+}
+const karanArjun4 = {
+    salary: 50000,
+}
+
+//if we want to use the methods/properties of employee function in the karanArjun function then
+//we can write employee as a prototype in karanArjun
+
+karanArjun.__proto__ = employee;
+karanArjun2.__proto__ = employee;
+karanArjun3.__proto__ = employee;
+karanArjun4.__proto__ = employee;
