@@ -12,17 +12,17 @@
 //What is DOM?
 //When a web page is loaded, the browser creates a Document Object Model(DOM) of the page.
 
-                       window
-                          |
-                       document
-                            |
-                           html
-                        /        \
-                     head            body
-                   / / | \            /   \
-            meta meta title link     div    script
-                                   / / | \
-                                 img h1 p div
+            //           window
+            //          |
+           //        document
+          //            |
+         //             html
+        //             /        \
+        //       head            body
+       //      / / | \            /   \
+     //  meta meta title link     div    script
+       //                       / / | \
+       //                   img h1 p div
 
 //DOM is usd to make dynamic changes/manipulation.
                    //DOM Manipulation:
@@ -69,10 +69,10 @@ let allEle=document.querySelectorAll(".heading");   //all elements
 console.dir(allEle);
 
                    //Properties
-1.tagName : returns tag for element nodes
-2.innerText: returns the text content of the element and all its children
-3.innerHTML: returns the plain text or HTML contents in the element
-4.textContent: returns textual content even for hidden elements
+//1.tagName : returns tag for element nodes
+//2.innerText: returns the text content of the element and all its children
+//3.innerHTML: returns the plain text or HTML contents in the element
+//4.textContent: returns textual content even for hidden elements
 
 //when we create DOM tree :
 //we have 3 types of nodes:
