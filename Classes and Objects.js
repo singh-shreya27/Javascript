@@ -131,9 +131,9 @@ lexus.setBrand("lexus");
 
                       //CONSTRUCTOR.
 //Constructor() method is:              class MyClass{
-  1.automatically invoked by new              constructor(){...}
-  2.initializes object                        myMethod(){...}
-                                                 }
+//  1.automatically invoked by new              constructor(){...}
+ // 2.initializes object                        myMethod(){...}
+ //                                                }
 
 class ToyotaCar{
     constructor(brand,mileage){
@@ -162,4 +162,4 @@ class Parent{
   }
 clas Child extends Parent{
 }
-*If child & parent have same method child's method will be used[Method Overriding]
+//*If child & parent have same method child's method will be used[Method Overriding]
