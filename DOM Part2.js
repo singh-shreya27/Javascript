@@ -1,10 +1,10 @@
                //DOM Manipulation
 //Attributes
-1. getAttribute(attr)  //to get the attribute value
-2. setAttribute(attr,value) //to set the attribute value 
+//1. getAttribute(attr)  //to get the attribute value
+//2. setAttribute(attr,value) //to set the attribute value 
 
 //Style
-1. node.style
+//1. node.style
 
 //Insert Elements :    let el=document.createElement("div")
 //1.node.append(el)  //adds at the end of node(inside)
@@ -28,9 +28,9 @@ newButton.style.backgroundColor="red";
 document.querySelector("body").prepend(newButton);
 
 //Question 2:Create a <p> tag in html, give it a class & some styling.
-Now create a new class in CSS and try to append this class to the <p> element.
-Did you notice, how you overwrite the class name when you add a new one?
-Solve this problem using classList.
+//Now create a new class in CSS and try to append this class to the <p> element.
+//Did you notice, how you overwrite the class name when you add a new one?
+//Solve this problem using classList.
 
 //access the <p>
 let para=document.querySelector("p");
