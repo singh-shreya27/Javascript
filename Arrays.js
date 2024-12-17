@@ -1,5 +1,5 @@
-Arrays in JS:
-Collection of items.
+//Arrays in JS:
+//Collection of items.
 let marks=[97,82,77,65,32];
 console.log(marks);
 console.log(marks.length);
