@@ -1,10 +1,10 @@
-// console.log("Hello js.");
-// console.log("Hello shreya");
-// console.log("I want to learn javascript.");
-// fullName="Tony Stark";
-// console.log(fullName);
-// x=undefined;
-// console.log(x);
+console.log("Hello js.");
+ console.log("Hello shreya");
+console.log("I want to learn javascript.");
+fullName="Tony Stark";
+console.log(fullName);
+x=undefined;
+console.log(x);
 
 
 //Variable Rules
