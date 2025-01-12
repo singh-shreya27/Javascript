@@ -8,7 +8,7 @@ console.log(x);
 
 
 //Variable Rules
-
+//Variables are named memory locations.
 //Variable names are case sensitive; "a" and "A" is different.
 //Only letters, digits, underscore(_) and $ is allowed.(not even space)
 //Only a letter, underscore(_) or $ should be 1st character.
